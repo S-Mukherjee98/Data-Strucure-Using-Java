@@ -14,6 +14,7 @@ public class LinearSearch {
        int[] arr = inputArray(sc, size);
        System.out.println("Enter The target element to be searched : ");
        int target = sc.nextInt();
+       sc.close();
        int index=performSearch(arr,target);
        if (index==-1) {
         System.out.println("Element is not in the array");
