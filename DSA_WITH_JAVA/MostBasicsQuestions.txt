@@ -1,10 +1,10 @@
 𝗔𝗿𝗿𝗮𝘆𝘀 𝗮𝗻𝗱 𝗦𝘁𝗿𝗶𝗻𝗴𝘀:
-1. Find the missing number in an array of integers.==>Problem3.java
-2. Implement an algorithm to rotate an array. ==>Problem1.java
-3. Check if a string is a palindrome.==>Problem2.java
-4. Find the first non-repeating character in a string. ==>Problem4.java 
-5. Implement an algorithm to reverse a linked list.==>Problem5.java
-6. Merge two sorted arrays.
+1. Find the missing number in an array of integers.                                 ==>Problem3.java
+2. Implement an algorithm to rotate an array.                                       ==>Problem1.java
+3. Check if a string is a palindrome.                                               ==>Problem2.java
+4. Find the first non-repeating character in a string.                              ==>Problem4.java 
+5. Implement an algorithm to reverse a linked list.                                 ==>Problem5.java
+6. Merge two sorted arrays.==>Problem6.java
 7. Implement a stack using arrays/linked list.
 8. Write a program to remove duplicates from a sorted array.
 
