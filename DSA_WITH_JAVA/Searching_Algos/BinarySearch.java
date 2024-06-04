@@ -28,7 +28,7 @@ public class BinarySearch {
             }
 
         } catch (Exception e) {
-            // TODO: handle exception
+            
             System.out.println("Exception caught: " + e.getMessage());
             throw e;
         }
@@ -44,7 +44,7 @@ public class BinarySearch {
             }
             return  arr;
         } catch (Exception e) {
-            // TODO: handle exception
+            
             System.out.println("Exception caught: " + e.getMessage());
             throw e;
             
