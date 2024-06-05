@@ -1,13 +1,15 @@
 package DSA_WITH_JAVA.Most_Common_Problems;
 
-//Write a program to remove duplicates from a sorted array.
+import java.util.HashSet;
+import java.util.Set;
 
-//!Naive Approache
+
+
 
 
 public class Problem8 {
 
-
+    //!Naive Approache
     public void removeDuplicates(int arr[], int n) {
 
         int [] temp=new int[n];
@@ -28,11 +30,29 @@ public class Problem8 {
     }
 
 
+    //!Using Set
+
+    public int  removeDuplicates2(int arr[],int n){
+        Set<Integer> unique_elements = new HashSet<>();
+        int i ;
+        for (i = 0; i < n; i++) {
+            unique_elements.add(arr[i]);
+        }
+        int ind = 0;
+        for (int elem : unique_elements) {
+            arr[ind++] = elem;
+        }
+        return unique_elements.size();
+    }
 
     public static void main(String[] args) {
         int arr[] = { 1, 2, 2, 3, 4, 4, 4, 5, 5 };
         int n = arr.length;
         Problem8 obj=new Problem8();
-        obj.removeDuplicates(arr, n);
+        // obj.removeDuplicates(arr, n);
+        int res=obj.removeDuplicates2(arr, n);
+        for (int i = 0; i < res; i++) {
+            System.out.print(" "+arr[i]);
+        }
     }
 }
