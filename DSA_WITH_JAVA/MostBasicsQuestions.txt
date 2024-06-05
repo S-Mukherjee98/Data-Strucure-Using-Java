@@ -4,8 +4,8 @@
 3. Check if a string is a palindrome.                                               ==>Problem2.java
 4. Find the first non-repeating character in a string.                              ==>Problem4.java 
 5. Implement an algorithm to reverse a linked list.                                 ==>Problem5.java
-6. Merge two sorted arrays.==>Problem6.java
-7. Implement a stack using arrays/linked list.
+6. Merge two sorted arrays.                                                         ==>Problem6.java
+7. Implement a stack using arrays/linked list.                                      ==>Problem7.java
 8. Write a program to remove duplicates from a sorted array.
 
 𝗟𝗶𝗻𝗸𝗲𝗱 𝗟𝗶𝘀𝘁𝘀:
