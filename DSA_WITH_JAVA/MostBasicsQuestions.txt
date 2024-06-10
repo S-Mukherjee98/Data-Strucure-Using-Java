@@ -9,7 +9,7 @@
 8. Write a program to remove duplicates from a sorted array.                        ==>Problem8.java(all approach)
 
 𝗟𝗶𝗻𝗸𝗲𝗱 𝗟𝗶𝘀𝘁𝘀:
-1. Detect a cycle in a linked list.
+1. Detect a cycle in a linked list.                                                 ==>LLProblem1.java(1_2 and 1_3)
 2. Find the intersection point of two linked lists.
 3. Reverse a linked list in groups of k.
 4. Implement a function to add two numbers represented by linked lists.
