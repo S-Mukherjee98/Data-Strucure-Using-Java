@@ -55,17 +55,55 @@ public class LLProblem2 {
         return null;
     }
    
-    public int getLength(Node head){
-        int len=0;
+    
+
+    public int getCount(Node head){
+        int count=0;
         while (head!=null) {
-            len++;
+            count++;
             head=head.next;
         }
-        return len;
+        return count;
+    }
+
+    public Node getIntersectionNodeMostEfficient(Node node1, Node node2){
+        while(node1!=null && node2!=null){
+            if(node1==node2) return node1;
+            node1=node1.next;
+            node2=node2.next;
+        }
+        return null;
     }
 
     
+    public Node getNode(Node head1,Node head2){
+        int l1=getCount(head1);
+        int l2=getCount(head2);
+        System.out.println(l1+" "+l2);
 
+        if(l1>l2){
+            int d1=l1-l2;
+            while(head1!=null){
+                if(d1==0) return getIntersectionNodeMostEfficient(head1, head2);
+                else{
+                    head1=head1.next;
+                    d1--;
+                }
+            }
+            return null;
+        }
+        else{
+            int d2=l2-l1;
+            while(head2!=null){
+                if(d2==0) return getIntersectionNodeMostEfficient(head1,head2);
+                else{
+                    head2=head2.next;
+                    d2--;
+                }
+            }
+            return null;
+        }
+    }
   
     public static void main(String[] args) {
         //Creating 2 Linked list
@@ -87,7 +125,9 @@ public class LLProblem2 {
         head2.next.next.next=head1.next; 
        
 
-        Node intersection_node =llist.getIntersectionNode2(head1,head2);
+        
+
+        Node intersection_node =llist.getNode(head1,head2);
         if (intersection_node!=null) {
             System.out.println("Intersection Node is "+intersection_node.data);
         }
