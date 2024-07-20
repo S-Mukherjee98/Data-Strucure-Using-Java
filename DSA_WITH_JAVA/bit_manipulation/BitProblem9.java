@@ -35,7 +35,7 @@ output=2
      }
 
      /*
-      * 6 --bin-> 110  7--bin-->111     8--bin-->1000       9--bin-->1001
+      6 --bin-> 110  7--bin-->111     8--bin-->1000       9--bin-->1001
       ! so remember that in a odd number always the last bit will be 1
       and for even last bit will be 0
 
@@ -66,6 +66,7 @@ output=2
 
       */
 
+     //little bit faster
 
       public static int countSetBit2(int number ){
         int count=0;
