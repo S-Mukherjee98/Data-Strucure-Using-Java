@@ -6,9 +6,7 @@ package recursion;
 import java.util.Scanner;
 
 class RecProblem6{
-    
-    //fibonacci series
-    // 0 1 1 2 3 5 8 13
+ 
     
     public static void main(String [] args){
         Scanner sc= new Scanner(System.in);
