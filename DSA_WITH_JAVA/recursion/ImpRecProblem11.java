@@ -36,7 +36,7 @@ class ImpRecProblem11{
     }
     
     public static void generate(int index,List<Integer> current, int [] arr, List<List<Integer>> res, boolean [] markTaken){
-        if(isAllTaken(markTaken)){
+        if(current.size()==arr.length){
             res.add(new ArrayList<>(current));
             return;
         }
@@ -52,10 +52,5 @@ class ImpRecProblem11{
         
     }
     
-    public static boolean isAllTaken(boolean [] markTaken){
-        for(int i=0;i<markTaken.length;i++){
-            if(!markTaken[i])return false;
-        }
-        return true;
-    }
+    
 }
