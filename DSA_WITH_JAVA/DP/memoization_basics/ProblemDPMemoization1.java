@@ -5,6 +5,11 @@ import java.util.*;
 // Dp problem
 //fibonacci series print using memoization 
 
+
+
+// fibonacci series 
+
+
 class ProblemDPMemoization1{
     
     public static void main(String [] args){
@@ -15,10 +20,8 @@ class ProblemDPMemoization1{
         for(int i = 0 ; i<n+1; i++){
             dp[i]=-1;
         }
-        for(int i =0; i<n; i++){
-           int number=function(i,dp); 
-           System.out.print(i+" ");
-        }
+        System.out.println(function(n,dp));
+        
         
     }
     
@@ -29,4 +32,5 @@ class ProblemDPMemoization1{
         dp[n]=element;
         return element;
     }
+    
 }
