@@ -3,18 +3,9 @@ package DP.Problems.House Robber;
 import java.util.*;
 
 //Maximum Sum of Non-Adjacent Elements | House Robber | 1-D 
-// Input: arr[] = {3, 2, 7, 10}
-// Output: 13
+// used memoization technique
 
-/*
-Enter The Size of The Array : 
-4
-Enter All Elements one by one : 
-2 1 4 9
-the answer is : 11
- */
-
-class MaximumSum{
+class MaximumSumTabulation{
     
     public static void main(String [] args){
       System.out.println("Enter The Size of The Array : ");
@@ -30,17 +21,25 @@ class MaximumSum{
     }
     
     public static int maxSum(int[] arr, int n){
+        int [] dp = new int[n];
+        // Arrays.fill(dp, -1);
+        return calculate(arr,n,dp);
         
-        return calculate(n-1,arr,n);
     }
     
-    public static int calculate(int index , int [] arr , int n){
-        if (index==0) return arr[index];
-        if (index<0) return 0;
-        int pick = arr[index] + calculate(index-2,arr,n);
-        int nonPick = 0 + calculate(index-1,arr,n);
-        int res = Math.max(pick,nonPick);
-        return res;
+    public static int calculate( int [] arr , int n, int [] dp){
+        dp[0]=arr[0];
+        int neg=0;
+        for(int index=1;index<n;index++){
+            int pick = arr[index];
+            if(index>1){
+             pick += dp[index-2];   
+            }
+            
+            int nonPick = 0 + dp[index-1];
+            dp[index]=Math.max(pick,nonPick);
+        }
+        return dp[n-1];
     }
     
 }
