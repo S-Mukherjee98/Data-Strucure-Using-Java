@@ -28,7 +28,7 @@ class ImpRecProblem1{
         List<List<Integer>> res = subsequence(index,arr,current, li);
         for(List<Integer> el: res){
             System.out.print(el+" ");
-        }
+        }   
     }
     
     public static List<List<Integer>> subsequence(int index, int [] arr,List<Integer> current,List<List<Integer>> res){
