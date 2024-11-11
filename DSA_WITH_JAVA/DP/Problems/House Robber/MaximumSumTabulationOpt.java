@@ -3,7 +3,7 @@ package DP.Problems.House Robber;
 import java.util.*;
 
 //Maximum Sum of Non-Adjacent Elements | House Robber | 1-D 
-// used memoization technique
+
 
 /*
  Enter The Size of The Array : 
