@@ -33,7 +33,7 @@ class Main {
             take = func(ind-1, target-arr[ind],arr,dp);
         }
         dp[ind][target] = (nonTake || take) ? 1 : 0;
-        return dp[ind][target]==1 || dp[ind][target]==0;
+        return dp[ind][target]==1;
         
     }
     
